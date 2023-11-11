@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package api;
+option go_package = "generator/api/rpc/proto";
+
+service Api {
+    rpc Ping(Empty) returns (Empty) {}
+}
+
+message Empty {}
