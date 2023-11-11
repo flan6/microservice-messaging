@@ -32,7 +32,7 @@ func main() {
 	log.Println("shut down")
 }
 
-func runApi() {
+func runApi() { // TODO: add context for graceful stop
 	// TODO: use grpc-gateway for http aswell
 	api := server.NewApi(
 		channel.NewChannel(
